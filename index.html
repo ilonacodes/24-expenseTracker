@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-wrapper">
+            <div class="logo">Expense Tracker</div>
+
+            <div class="user-inputs">
+                <div class="title-input">
+                    <label for="title">Expense Title</label>
+                    <input id="title_input" type="text" placeholder="Enter an expense here..">
+                </div>
+
+                <div class="amount-input">
+                    <label for="amount">Amount in EU</label>
+                    <input id="price_input" type="number" placeholder="€0.00">
+                </div>
+            </div>
+
+            <div class="submit-button">
+                <button id="#submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="expenses"></div>
+        <footer>
+            &copy; ilonacodes 2017
+        </footer>
+    </div>
+    <script src="src/Item.js"></script>
+    <script src="src/ExpenseTracker.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>

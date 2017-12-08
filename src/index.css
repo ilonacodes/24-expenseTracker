@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    flex: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: floralwhite;
+    border-bottom: 2px inset #999;
+
+
+}
+
+.logo, footer {
+    background-color: darkred;
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.title-input, .amount-input {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+label {
+    font-weight: 700;
+    align-self: center;
+
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    align-self: center;
+    padding-left: 10px;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid #ccc;
+}
+
+.submit-button {
+    align-self: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: orange;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.expenses {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 50px
+
+}
+
+.amount, .total-title, .total-amount {
+    font-weight: 600;
+}
+
+.line {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    border-bottom: 2px inset #999;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 50px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 90%;
+    }
+
+    .title-input, .amount-input {
+        font-size: 12px;
+    }
+
+    input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .container {
+        width: 90%;
+    }
+}
